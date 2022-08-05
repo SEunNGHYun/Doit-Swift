@@ -13,6 +13,16 @@
 		7F13BA43289CD86D003AADC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F13BA41289CD86D003AADC0 /* Main.storyboard */; };
 		7F13BA45289CD86F003AADC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F13BA44289CD86F003AADC0 /* Assets.xcassets */; };
 		7F13BA48289CD86F003AADC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F13BA46289CD86F003AADC0 /* LaunchScreen.storyboard */; };
+		7F81BB3A289D356B00D3B051 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB30289D356B00D3B051 /* 8.jpg */; };
+		7F81BB3B289D356B00D3B051 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB31289D356B00D3B051 /* 9.jpg */; };
+		7F81BB3C289D356B00D3B051 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB32289D356B00D3B051 /* 10.jpg */; };
+		7F81BB3D289D356B00D3B051 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB33289D356B00D3B051 /* 4.jpg */; };
+		7F81BB3E289D356B00D3B051 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB34289D356B00D3B051 /* 5.jpg */; };
+		7F81BB3F289D356B00D3B051 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB35289D356B00D3B051 /* 7.jpg */; };
+		7F81BB40289D356B00D3B051 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB36289D356B00D3B051 /* 6.jpg */; };
+		7F81BB41289D356B00D3B051 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB37289D356B00D3B051 /* 2.jpg */; };
+		7F81BB42289D356B00D3B051 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB38289D356B00D3B051 /* 3.jpg */; };
+		7F81BB43289D356B00D3B051 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F81BB39289D356B00D3B051 /* 1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		7F13BA44289CD86F003AADC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F13BA47289CD86F003AADC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F13BA49289CD86F003AADC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F81BB30289D356B00D3B051 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		7F81BB31289D356B00D3B051 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		7F81BB32289D356B00D3B051 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		7F81BB33289D356B00D3B051 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		7F81BB34289D356B00D3B051 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		7F81BB35289D356B00D3B051 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		7F81BB36289D356B00D3B051 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		7F81BB37289D356B00D3B051 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		7F81BB38289D356B00D3B051 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		7F81BB39289D356B00D3B051 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +60,7 @@
 		7F13BA2F289CD86D003AADC0 = {
 			isa = PBXGroup;
 			children = (
-				7F13BA3A289CD86D003AADC0 /* Picker_04 */,
+				7F13BA3A289CD86D003AADC0 /* Picker_05 */,
 				7F13BA39289CD86D003AADC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,9 +73,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F13BA3A289CD86D003AADC0 /* Picker_04 */ = {
+		7F13BA3A289CD86D003AADC0 /* Picker_05 */ = {
 			isa = PBXGroup;
 			children = (
+				7F81BB2F289D356B00D3B051 /* imgs */,
 				7F13BA3B289CD86D003AADC0 /* AppDelegate.swift */,
 				7F13BA3D289CD86D003AADC0 /* SceneDelegate.swift */,
 				7F13BA3F289CD86D003AADC0 /* ViewController.swift */,
@@ -64,7 +85,24 @@
 				7F13BA46289CD86F003AADC0 /* LaunchScreen.storyboard */,
 				7F13BA49289CD86F003AADC0 /* Info.plist */,
 			);
-			path = Picker_04;
+			path = Picker_05;
+			sourceTree = "<group>";
+		};
+		7F81BB2F289D356B00D3B051 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				7F81BB30289D356B00D3B051 /* 8.jpg */,
+				7F81BB31289D356B00D3B051 /* 9.jpg */,
+				7F81BB32289D356B00D3B051 /* 10.jpg */,
+				7F81BB33289D356B00D3B051 /* 4.jpg */,
+				7F81BB34289D356B00D3B051 /* 5.jpg */,
+				7F81BB35289D356B00D3B051 /* 7.jpg */,
+				7F81BB36289D356B00D3B051 /* 6.jpg */,
+				7F81BB37289D356B00D3B051 /* 2.jpg */,
+				7F81BB38289D356B00D3B051 /* 3.jpg */,
+				7F81BB39289D356B00D3B051 /* 1.jpg */,
+			);
+			path = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +163,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F81BB41289D356B00D3B051 /* 2.jpg in Resources */,
+				7F81BB43289D356B00D3B051 /* 1.jpg in Resources */,
+				7F81BB3A289D356B00D3B051 /* 8.jpg in Resources */,
+				7F81BB3E289D356B00D3B051 /* 5.jpg in Resources */,
+				7F81BB42289D356B00D3B051 /* 3.jpg in Resources */,
+				7F81BB3D289D356B00D3B051 /* 4.jpg in Resources */,
 				7F13BA48289CD86F003AADC0 /* LaunchScreen.storyboard in Resources */,
+				7F81BB40289D356B00D3B051 /* 6.jpg in Resources */,
 				7F13BA45289CD86F003AADC0 /* Assets.xcassets in Resources */,
+				7F81BB3B289D356B00D3B051 /* 9.jpg in Resources */,
+				7F81BB3F289D356B00D3B051 /* 7.jpg in Resources */,
+				7F81BB3C289D356B00D3B051 /* 10.jpg in Resources */,
 				7F13BA43289CD86D003AADC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R3H2WW368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Picker_04/Info.plist;
+				INFOPLIST_FILE = Picker_05/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +368,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R3H2WW368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Picker_04/Info.plist;
+				INFOPLIST_FILE = Picker_05/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
