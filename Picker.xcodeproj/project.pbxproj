@@ -40,7 +40,7 @@
 		7F13BA2F289CD86D003AADC0 = {
 			isa = PBXGroup;
 			children = (
-				7F13BA3A289CD86D003AADC0 /* Picker 04 */,
+				7F13BA3A289CD86D003AADC0 /* Picker_04 */,
 				7F13BA39289CD86D003AADC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7F13BA3A289CD86D003AADC0 /* Picker 04 */ = {
+		7F13BA3A289CD86D003AADC0 /* Picker_04 */ = {
 			isa = PBXGroup;
 			children = (
 				7F13BA3B289CD86D003AADC0 /* AppDelegate.swift */,
@@ -64,7 +64,7 @@
 				7F13BA46289CD86F003AADC0 /* LaunchScreen.storyboard */,
 				7F13BA49289CD86F003AADC0 /* Info.plist */,
 			);
-			path = "Picker 04";
+			path = Picker_04;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R3H2WW368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Picker/Info.plist;
+				INFOPLIST_FILE = Picker_04/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +320,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7R3H2WW368;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Picker/Info.plist;
+				INFOPLIST_FILE = Picker_04/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
