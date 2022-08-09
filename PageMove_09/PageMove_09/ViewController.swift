@@ -9,24 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var images = ["01.png","02.png","03.png","04.png","05.png","06.png"]
+    var numbers = [1,2,3,4,5,6,7,8,9,10]
 
-    @IBOutlet var imgView: UIImageView!
+    @IBOutlet var lblNumbers: UILabel!
     @IBOutlet var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        pageControl.numberOfPages = images.count
+        pageControl.numberOfPages = numbers.count
         pageControl.currentPage = 0
-        pageControl.pageIndicatorTintColor = UIColor.green
-        pageControl.currentPageIndicatorTintColor = UIColor.red
+        pageControl.pageIndicatorTintColor = UIColor.lightGray
+        pageControl.currentPageIndicatorTintColor = UIColor.gray
         
-        imgView.image = UIImage(named: images[0])
+        lblNumbers.text = String(numbers[0])
     }
 
     @IBAction func pageChange(_ sender: UIPageControl) {
-        imgView.image = UIImage(named: images[pageControl.currentPage])
+        
+        lblNumbers.text = String(numbers[pageControl.currentPage])
     }
     
 }

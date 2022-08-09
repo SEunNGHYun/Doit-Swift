@@ -16,15 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95K-ty-Y3A">
-                                <rect key="frame" x="16" y="44" width="358" height="749"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyA-JO-pLP">
+                                <rect key="frame" x="28" y="84" width="346" height="378"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="15m-8u-aPJ">
-                                <rect key="frame" x="139" y="768" width="113" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="urS-Ak-8LT">
+                                <rect key="frame" x="39" y="774" width="315" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="pageChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="AXC-nw-2lT"/>
+                                    <action selector="pageChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="lR3-sn-PCv"/>
                                 </connections>
                             </pageControl>
                         </subviews>
@@ -32,13 +35,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="imgView" destination="95K-ty-Y3A" id="178-LX-7gc"/>
-                        <outlet property="pageControl" destination="15m-8u-aPJ" id="Qeo-4o-rr3"/>
+                        <outlet property="lblNumbers" destination="vyA-JO-pLP" id="fHW-b3-fIy"/>
+                        <outlet property="pageControl" destination="urS-Ak-8LT" id="hHV-pm-Wke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="514" y="95"/>
+            <point key="canvasLocation" x="513.84615384615381" y="95.260663507109001"/>
         </scene>
     </scenes>
     <resources>
