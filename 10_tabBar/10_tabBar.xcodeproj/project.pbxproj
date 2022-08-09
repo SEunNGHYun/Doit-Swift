@@ -18,6 +18,7 @@
 		7F9DF28728A252DD004FD145 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DF28628A252DD004FD145 /* ImageViewController.swift */; };
 		7F9DF28928A255A5004FD145 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DF28828A255A5004FD145 /* AlertViewController.swift */; };
 		7F9DF28B28A2613B004FD145 /* File.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9DF28A28A2613B004FD145 /* File.png */; };
+		7F9DF28D28A26326004FD145 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DF28C28A26326004FD145 /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7F9DF28628A252DD004FD145 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ../../Picker_05/ImageViewController.swift; sourceTree = "<group>"; };
 		7F9DF28828A255A5004FD145 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		7F9DF28A28A2613B004FD145 /* File.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = File.png; sourceTree = "<group>"; };
+		7F9DF28C28A26326004FD145 /* PickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				7F9DF27028A251A8004FD145 /* SceneDelegate.swift */,
 				7F9DF28628A252DD004FD145 /* ImageViewController.swift */,
 				7F9DF28828A255A5004FD145 /* AlertViewController.swift */,
+				7F9DF28C28A26326004FD145 /* PickerViewController.swift */,
 				7F9DF27228A251A8004FD145 /* ViewController.swift */,
 				7F9DF27428A251A8004FD145 /* Main.storyboard */,
 				7F9DF27728A251AA004FD145 /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9DF28D28A26326004FD145 /* PickerViewController.swift in Sources */,
 				7F9DF27328A251A8004FD145 /* ViewController.swift in Sources */,
 				7F9DF26F28A251A8004FD145 /* AppDelegate.swift in Sources */,
 				7F9DF28728A252DD004FD145 /* ImageViewController.swift in Sources */,

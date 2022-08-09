@@ -61,6 +61,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Yjf-DZ-GVl"/>
                         <segue destination="XVy-WC-PBS" kind="relationship" relationship="viewControllers" id="9Fq-8Y-ZPB"/>
                         <segue destination="cdk-7r-BR6" kind="relationship" relationship="viewControllers" id="Yds-7k-15q"/>
+                        <segue destination="AcG-bq-JWz" kind="relationship" relationship="viewControllers" id="flM-RK-gGu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAC-Mh-sQy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -155,6 +156,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8F5-l1-UBu" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1054" y="755"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="vld-RS-LTq">
+            <objects>
+                <viewController id="AcG-bq-JWz" customClass="PickerViewController" customModule="_0_tabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZUX-ly-Hpd">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9rM-hO-RDR">
+                                <rect key="frame" x="30" y="154" width="330" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4yK-T2-Lfy">
+                                <rect key="frame" x="171" y="90" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="toggleSwitch:" destination="AcG-bq-JWz" eventType="valueChanged" id="S2Q-Rz-FQo"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RzP-n6-1op"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="sCr-wX-ioF"/>
+                    <connections>
+                        <outlet property="imageView" destination="9rM-hO-RDR" id="HlR-FB-NWG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWe-CH-LqZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196.92307692307691" y="1097.6303317535544"/>
         </scene>
     </scenes>
     <resources>
