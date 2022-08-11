@@ -58,13 +58,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PLr-PF-SaP">
-                                <rect key="frame" x="61" y="197" width="269" height="34"/>
+                                <rect key="frame" x="61" y="343" width="269" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnZ-KC-qdM">
-                                <rect key="frame" x="126" y="268" width="138" height="31"/>
+                                <rect key="frame" x="126" y="414" width="138" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Add"/>
@@ -72,18 +72,31 @@
                                     <action selector="btnAddItem:" destination="1FR-hM-GG6" eventType="touchUpInside" id="gQZ-Qj-6sG"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Xc-dl-o7I">
+                                <rect key="frame" x="202" y="139" width="188" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1FR-hM-GG6" id="fKO-5h-zMs"/>
+                                </connections>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWW-rs-bK9">
+                                <rect key="frame" x="16" y="139" width="166" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Uj-t9-qFz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add View" id="lYh-oL-L4h"/>
                     <connections>
+                        <outlet property="AddImage" destination="eWW-rs-bK9" id="t6j-lE-6Zw"/>
+                        <outlet property="pkImages" destination="4Xc-dl-o7I" id="DVC-rp-abt"/>
                         <outlet property="tfAddItem" destination="PLr-PF-SaP" id="siD-Cr-tYR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BzZ-ch-JjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2000" y="-194"/>
+            <point key="canvasLocation" x="2000" y="-194.07582938388626"/>
         </scene>
         <!--Detail View-->
         <scene sceneID="ese-i4-y1X">
