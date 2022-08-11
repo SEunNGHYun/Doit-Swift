@@ -71,6 +71,7 @@ class ViewController: UIViewController, EditDelegate{
         }
         print(">>>>","isZoom", isZoom, self.isZoom)
 
+
         ImgView.frame.size = CGSize(width: newWidth, height: newHeight)
     }
     
