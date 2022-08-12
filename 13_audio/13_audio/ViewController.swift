@@ -24,6 +24,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     @IBOutlet var lblEndTime: UILabel!
     @IBOutlet var lblRecordTime: UILabel!
     
+    @IBOutlet var ImageVIewForState: UIImageView!
     @IBOutlet var btnPlay: UIButton!
     @IBOutlet var btnPause: UIButton!
     @IBOutlet var btnStop: UIButton!
@@ -51,9 +52,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     func selectAudioFile(){
         if !isRecordMode{
             audioFile = Bundle.main.url(forResource: "Sicilian_Breeze", withExtension: "mp3")
+            ImageVIewForState.image = UIImage(named: "stop.png")
         }else{
             let documentDirectory = FileManager.default.urls(for : .documentDirectory, in : .userDomainMask)[0]
             audioFile = documentDirectory.appendingPathComponent("recordFile.m4a")
+            ImageVIewForState.image = UIImage(named: "record.png")
             //기록모드일 때 파일을 생성한다.
         }
     }
@@ -131,6 +134,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
         audioPlayer.play()
         setPlayButton(false, pause: true, stop: true)
         progressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: timePlayerSelector, userInfo: nil, repeats: true)
+        ImageVIewForState.image = UIImage(named: "play.png")
         //초 시작
     }
     
@@ -143,9 +147,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     @objc func updateRecordTime(){
         lblRecordTime.text = convertNSTimeInterval2String(audioRecorder.currentTime)
     }
+    
     @IBAction func btnPauseAudio(_ sender: UIButton) {
         audioPlayer.pause()
         setPlayButton(true, pause: false, stop: false)
+        ImageVIewForState.image = UIImage(named: "pause.png")
     }
     @IBAction func btnStopAudio(_ sender: UIButton) {
         audioPlayer.stop()
@@ -153,6 +159,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
         lblCurrentTime.text = convertNSTimeInterval2String(0)
         setPlayButton(true, pause: false, stop: false)
         progressTimer.invalidate()//타이머 무효화
+        ImageVIewForState.image = UIImage(named: "stop.png")
     }
     
     @IBAction func slChangeVolume(_ sender: UISlider) {

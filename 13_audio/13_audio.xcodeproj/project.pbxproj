@@ -14,7 +14,11 @@
 		7FEACF1528A62D94002AC933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF1428A62D94002AC933 /* Assets.xcassets */; };
 		7FEACF1828A62D94002AC933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF1628A62D94002AC933 /* LaunchScreen.storyboard */; };
 		7FEACF2028A62DF2002AC933 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF1F28A62DF2002AC933 /* 01.png */; };
-		7FEACF2228A6423A002AC933 /* Sicilian_Breeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF2128A6423A002AC933 /* Sicilian_Breeze.mp3 */; };
+		7FEACF2828A69728002AC933 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF2328A69727002AC933 /* stop.png */; };
+		7FEACF2928A69728002AC933 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF2428A69727002AC933 /* record.png */; };
+		7FEACF2A28A69728002AC933 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF2528A69727002AC933 /* pause.png */; };
+		7FEACF2B28A69728002AC933 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF2628A69728002AC933 /* play.png */; };
+		7FEACF2C28A69728002AC933 /* Sicilian_Breeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7FEACF2728A69728002AC933 /* Sicilian_Breeze.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +31,11 @@
 		7FEACF1728A62D94002AC933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FEACF1928A62D94002AC933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FEACF1F28A62DF2002AC933 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
-		7FEACF2128A6423A002AC933 /* Sicilian_Breeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sicilian_Breeze.mp3; sourceTree = "<group>"; };
+		7FEACF2328A69727002AC933 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		7FEACF2428A69727002AC933 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		7FEACF2528A69727002AC933 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		7FEACF2628A69728002AC933 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		7FEACF2728A69728002AC933 /* Sicilian_Breeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sicilian_Breeze.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				7FEACF1F28A62DF2002AC933 /* 01.png */,
-				7FEACF2128A6423A002AC933 /* Sicilian_Breeze.mp3 */,
+				7FEACF2528A69727002AC933 /* pause.png */,
+				7FEACF2628A69728002AC933 /* play.png */,
+				7FEACF2428A69727002AC933 /* record.png */,
+				7FEACF2728A69728002AC933 /* Sicilian_Breeze.mp3 */,
+				7FEACF2328A69727002AC933 /* stop.png */,
 				7FEACF0B28A62D92002AC933 /* AppDelegate.swift */,
 				7FEACF0D28A62D92002AC933 /* SceneDelegate.swift */,
 				7FEACF0F28A62D92002AC933 /* ViewController.swift */,
@@ -132,10 +144,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FEACF1828A62D94002AC933 /* LaunchScreen.storyboard in Resources */,
+				7FEACF2B28A69728002AC933 /* play.png in Resources */,
+				7FEACF2C28A69728002AC933 /* Sicilian_Breeze.mp3 in Resources */,
+				7FEACF2828A69728002AC933 /* stop.png in Resources */,
 				7FEACF1528A62D94002AC933 /* Assets.xcassets in Resources */,
+				7FEACF2A28A69728002AC933 /* pause.png in Resources */,
 				7FEACF2028A62DF2002AC933 /* 01.png in Resources */,
+				7FEACF2928A69728002AC933 /* record.png in Resources */,
 				7FEACF1328A62D92002AC933 /* Main.storyboard in Resources */,
-				7FEACF2228A6423A002AC933 /* Sicilian_Breeze.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
