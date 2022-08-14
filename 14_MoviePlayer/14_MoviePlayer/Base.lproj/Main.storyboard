@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-2g-7ym">
-                                <rect key="frame" x="16" y="64" width="358" height="750"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dfe-2g-7ym">
+                                <rect key="frame" x="16" y="63.999999999999972" width="1396" height="402.33333333333331"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="앱 내부 비디오 재생" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubE-8h-f2b">
-                                        <rect key="frame" x="113.66666666666666" y="0.0" width="131" height="32"/>
+                                        <rect key="frame" x="632.66666666666663" y="0.0" width="131" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="zwd-Vi-ikk"/>
                                         </constraints>
@@ -28,47 +28,84 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gox-Db-zK9">
-                                        <rect key="frame" x="0.0" y="32" width="358" height="324"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button" image="FastTyping.jpg"/>
-                                        <connections>
-                                            <action selector="btnPlayInternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YsT-FD-ujJ"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlP-oY-1SS">
-                                        <rect key="frame" x="154" y="356" width="50" height="50"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3l-OE-dwO">
+                                        <rect key="frame" x="4" y="32" width="1388" height="200"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmJ-zk-J8r">
+                                                <rect key="frame" x="0.0" y="0.0" width="694" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="GCt-v6-QRj"/>
+                                                    <constraint firstAttribute="width" constant="200" id="RtL-Yn-I3T"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Mountaineering.jpg"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gox-Db-zK9">
+                                                <rect key="frame" x="694" y="0.0" width="694" height="200"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="FastTyping.jpg"/>
+                                                <connections>
+                                                    <action selector="btnPlayInternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YsT-FD-ujJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="kmJ-zk-J8r" firstAttribute="height" secondItem="Gox-Db-zK9" secondAttribute="height" id="YL0-hu-kUu"/>
+                                            <constraint firstItem="kmJ-zk-J8r" firstAttribute="width" secondItem="Gox-Db-zK9" secondAttribute="width" id="tUk-dH-GWS"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlP-oY-1SS">
+                                        <rect key="frame" x="673" y="232" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="외부 링크 비디오 재생" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvl-Pd-i2F">
-                                        <rect key="frame" x="106.33333333333333" y="406" width="145.66666666666669" height="20.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="외부 링크 비디오 재생" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvl-Pd-i2F">
+                                        <rect key="frame" x="625.33333333333337" y="282" width="145.66666666666663" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxw-lI-DrD">
-                                        <rect key="frame" x="0.0" y="426.33333333333326" width="358" height="323.66666666666674"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button" image="Fireworks.jpg"/>
-                                        <connections>
-                                            <action selector="btnPlayExternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Y1-Fz-cvg"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9G-ue-NmX">
+                                        <rect key="frame" x="4" y="302.33333333333331" width="1388" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ui-Nd-Avg">
+                                                <rect key="frame" x="0.0" y="0.0" width="694" height="100"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Seascape.jpg"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxw-lI-DrD">
+                                                <rect key="frame" x="694" y="0.0" width="694" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="31D-uK-5GN"/>
+                                                    <constraint firstAttribute="height" constant="100" id="RZA-L0-ngf"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Fireworks.jpg"/>
+                                                <connections>
+                                                    <action selector="btnPlayExternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Y1-Fz-cvg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Lxw-lI-DrD" firstAttribute="width" secondItem="7ui-Nd-Avg" secondAttribute="width" id="85n-fa-sqF"/>
+                                            <constraint firstItem="Lxw-lI-DrD" firstAttribute="height" secondItem="7ui-Nd-Avg" secondAttribute="height" id="Dhb-UJ-cQt"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Lxw-lI-DrD" firstAttribute="height" secondItem="Gox-Db-zK9" secondAttribute="height" id="WSZ-y7-86J"/>
+                                    <constraint firstItem="c3l-OE-dwO" firstAttribute="leading" secondItem="dfe-2g-7ym" secondAttribute="leading" constant="4" id="1PM-bF-i0P"/>
+                                    <constraint firstItem="j9G-ue-NmX" firstAttribute="leading" secondItem="dfe-2g-7ym" secondAttribute="leading" constant="4" id="HqD-2E-83n"/>
+                                    <constraint firstAttribute="trailing" secondItem="j9G-ue-NmX" secondAttribute="trailing" constant="4" id="MxZ-yS-OCs"/>
+                                    <constraint firstAttribute="trailing" secondItem="c3l-OE-dwO" secondAttribute="trailing" constant="4" id="mMO-de-bkD"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="dfe-2g-7ym" secondAttribute="bottom" constant="30" id="9ex-YG-cnI"/>
-                            <constraint firstItem="dfe-2g-7ym" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="NTW-qu-CTP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dfe-2g-7ym" secondAttribute="trailing" constant="16" id="Skn-9S-7t6"/>
-                            <constraint firstItem="dfe-2g-7ym" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bCj-nM-VEj"/>
+                            <constraint firstItem="dfe-2g-7ym" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qbk-jq-CcA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dfe-2g-7ym" secondAttribute="trailing" constant="16" id="tU1-nA-7z4"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -80,6 +117,8 @@
     <resources>
         <image name="FastTyping.jpg" width="640" height="360"/>
         <image name="Fireworks.jpg" width="640" height="360"/>
+        <image name="Mountaineering.jpg" width="640" height="360"/>
+        <image name="Seascape.jpg" width="640" height="360"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
