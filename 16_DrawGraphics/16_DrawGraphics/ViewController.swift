@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        DrawTree()
     }
 
     @IBAction func btnDrawLine(_ sender: UIButton) {
@@ -129,6 +131,56 @@ class ViewController: UIViewController {
         context.addLine(to: CGPoint(x: 70, y: 450))
         context.addLine(to: CGPoint(x: 170, y: 350))
         context.fillPath()
+        context.strokePath()
+        
+        imgView.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+    }
+    
+    func DrawTree(){
+        UIGraphicsBeginImageContext(imgView.frame.size)
+        let context = UIGraphicsGetCurrentContext()!
+        
+        context.setLineWidth(2.0)
+        context.setStrokeColor(UIColor.brown.cgColor)
+        context.setFillColor(UIColor.brown.cgColor)
+        
+        context.move(to: CGPoint(x: 140, y: 450))
+        context.addLine(to: CGPoint(x: 170, y: 200))
+        context.addLine(to: CGPoint(x: 200, y: 450))
+        context.addLine(to: CGPoint(x: 140, y: 450))
+        context.fillPath()
+        context.strokePath()
+        
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.green.cgColor)
+        let circle1 = CGRect(x: 120, y: 150, width: 100, height: 100)
+        context.addEllipse(in: circle1)
+        context.strokePath()
+        
+        
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.green.cgColor)
+        let circle2 = CGRect(x: 170, y: 150, width: 100, height: 100)
+        context.addEllipse(in: circle2)
+        context.strokePath()
+        
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.green.cgColor)
+        let circle3 = CGRect(x: 70, y: 150, width: 100, height: 100)
+        context.addEllipse(in: circle3)
+        context.strokePath()
+        
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.green.cgColor)
+        let circle4 = CGRect(x: 120, y: 100, width: 100, height: 100)
+        context.addEllipse(in: circle4)
+        context.strokePath()
+        
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.green.cgColor)
+        let circle5 = CGRect(x: 120, y: 200, width: 100, height: 100)
+        context.addEllipse(in: circle5)
         context.strokePath()
         
         imgView.image = UIGraphicsGetImageFromCurrentImageContext()
