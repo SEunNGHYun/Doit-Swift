@@ -7,9 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var imgView: UIImageView!
+    @IBOutlet var tfLineWidth: UITextField!
     
     var lastPoint : CGPoint!
     var lineSize : CGFloat! = 2.0
@@ -18,6 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tfLineWidth.delegate = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -73,6 +75,30 @@ class ViewController: UIViewController {
     
     @IBAction func btnClearImgView(_ sender: UIButton) {
         imgView.image = nil
+    }
+    
+    @IBAction func btnChageColorBlack(_ sender: Any) {
+        lineColor = UIColor.black.cgColor
+        
+        UIGraphicsGetCurrentContext()?.setStrokeColor(lineColor)
+    }
+    @IBAction func btnChangeColorYellow(_ sender: Any) {
+        lineColor = UIColor.yellow.cgColor
+ 
+        UIGraphicsGetCurrentContext()?.setStrokeColor(lineColor)
+    }
+    @IBAction func btnChangeColotRed(_ sender: Any) {
+        lineColor = UIColor.red.cgColor
+        
+        UIGraphicsGetCurrentContext()?.setStrokeColor(lineColor)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let width = Float(tfLineWidth.text!)
+        lineSize = CGFloat(width!)
+        UIGraphicsGetCurrentContext()?.setLineWidth(lineSize)
+        
+        return true
     }
     
 }
