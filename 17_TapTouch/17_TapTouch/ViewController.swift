@@ -9,9 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var txtMessage: UILabel!
-    @IBOutlet var txtTapCount: UILabel!
-    @IBOutlet var txtTouchCount: UILabel!
+    @IBOutlet var imgView: UIImageView!
+    
+    var lastPoint : CGPoint!
+    var lineSize : CGFloat! = 2.0
+    var lineColor = UIColor.red.cgColor
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,31 +21,59 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch = touches.first! as UITouch//현재 발생한 이벤트를 가져온다.
+        let touch = touches.first! as UITouch
         
-        txtMessage.text = "Touches Began"
-        txtTapCount.text = String(touch.tapCount)
-        //짜르게 연속하여 터치한 수
-        txtTouchCount.text = String(touches.count)
-        //터치한 손가락의 갯수
-    }//터치가 시작이 됭 때 호출
-    
+        lastPoint = touch.location(in: imgView)
+        //터치된 위치를 저장
+    }
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch = touches.first! as UITouch
+        UIGraphicsBeginImageContext(imgView.frame.size)
+        UIGraphicsGetCurrentContext()?.setStrokeColor(lineColor)
+        UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
+        UIGraphicsGetCurrentContext()?.setLineWidth(lineSize)
         
-        txtMessage.text = "Touches Moves"
-        txtTapCount.text  = String(touch.tapCount)
-        txtTouchCount.text = String(touches.count)
-    }//손가락이 움직일 때 실행
-    
+        let touch = touches.first! as UITouch
+        let currPoint = touch.location(in: imgView)
+        
+        imgView.image?.draw(in: CGRect(x: 0, y: 0, width: imgView.frame.size.width, height: imgView.frame.size.height))
+        UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+        UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+        UIGraphicsGetCurrentContext()?.strokePath()
+        
+        imgView.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        
+        lastPoint = currPoint
+        
+    }
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch = touches.first! as UITouch
+        UIGraphicsBeginImageContext(imgView.frame.size)
+        UIGraphicsGetCurrentContext()?.setStrokeColor(lineColor)
+        UIGraphicsGetCurrentContext()?.setLineCap(CGLineCap.round)
+        UIGraphicsGetCurrentContext()?.setLineWidth(lineSize)
         
-        txtMessage.text = "Touched Ended"
-        txtTapCount.text = String(touch.tapCount)
-        txtTouchCount.text = String(touches.count)
-    }//손가락을 때었을 때 실행
-
-
+        let touch = touches.first! as UITouch
+        let currPoint = touch.location(in: imgView)
+        
+        imgView.image?.draw(in: CGRect(x: 0, y: 0, width: imgView.frame.size.width, height: imgView.frame.size.height))
+        UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+        UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+        UIGraphicsGetCurrentContext()?.strokePath()
+        
+        imgView.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+    }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            imgView.image = nil
+        }
+    }
+    
+    @IBAction func btnClearImgView(_ sender: UIButton) {
+        imgView.image = nil
+    }
+    
 }
 
