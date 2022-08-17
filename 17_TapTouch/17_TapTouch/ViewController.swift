@@ -39,13 +39,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         imgView.image?.draw(in: CGRect(x: 0, y: 0, width: imgView.frame.size.width, height: imgView.frame.size.height))
         UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
-        UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+        UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: currPoint.x, y: currPoint.y))
         UIGraphicsGetCurrentContext()?.strokePath()
         
         imgView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        
+        print(">>>>>")
         lastPoint = currPoint
         
     }
@@ -57,10 +57,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let touch = touches.first! as UITouch
         let currPoint = touch.location(in: imgView)
-        
+        print("Ffff")
         imgView.image?.draw(in: CGRect(x: 0, y: 0, width: imgView.frame.size.width, height: imgView.frame.size.height))
         UIGraphicsGetCurrentContext()?.move(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
-        UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: lastPoint.x, y: lastPoint.y))
+        UIGraphicsGetCurrentContext()?.addLine(to: CGPoint(x: currPoint.x, y: currPoint.y))
         UIGraphicsGetCurrentContext()?.strokePath()
         
         imgView.image = UIGraphicsGetImageFromCurrentImageContext()
