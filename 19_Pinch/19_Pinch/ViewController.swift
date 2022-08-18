@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var imgPinch: UIImageView!
     @IBOutlet var txtPinch: UILabel!
     
     var initalFontSize : CGFloat!
@@ -23,13 +24,15 @@ class ViewController: UIViewController {
     }
     
     @objc func doPinch(_ pinch: UIPinchGestureRecognizer){
-        if (pinch.state == UIGestureRecognizer.State.began){
-            initalFontSize = txtPinch.font.pointSize
-            //제스쳐가 시작이 될 때 기존의 폰트 값을 저장
-        }else{
-            txtPinch.font = txtPinch.font.withSize(initalFontSize * pinch.scale)
-            //핀치 제스쳐가 진행 중일때 기존의 폰트보다 커진다.
-        }
+//        if (pinch.state == UIGestureRecognizer.State.began){
+//            initalFontSize = txtPinch.font.pointSize
+//            //제스쳐가 시작이 될 때 기존의 폰트 값을 저장
+//        }else{
+//            txtPinch.font = txtPinch.font.withSize(initalFontSize * pinch.scale)
+//            //핀치 제스쳐가 진행 중일때 기존의 폰트보다 커진다.
+//        }
+        imgPinch.transform = imgPinch.transform.scaledBy(x: pinch.scale, y: pinch.scale)
+        pinch.scale = 1
     }
 }
 
