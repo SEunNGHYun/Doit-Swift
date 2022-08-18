@@ -11,15 +11,27 @@ class ViewController: UIViewController {
 
     @IBOutlet var imgPinch: UIImageView!
     @IBOutlet var txtPinch: UILabel!
+    let imgs = ["peing11.png", "peingu1.jpeg", "peing2.jpeg", "peing5.jpeg", "peing6.jpeg", "peingu4.jpeg"]
+    let ping = [UIImage]()
     
+    var imgIndex = 0
     var initalFontSize : CGFloat!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        imgPinch.image = UIImage(named: imgs[0])
+        imgIndex = 0
+        
         let pinch = UIPinchGestureRecognizer(target: self, action: #selector(ViewController.doPinch(_ : )))
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.doSwipeRight(_ : )))
+        swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.doSwipeLeft(_ : )))
+        swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         
         self.view.addGestureRecognizer(pinch)
+        self.view.addGestureRecognizer(swipeLeft)
+        self.view.addGestureRecognizer(swipeRight)
         //뷰에 제스쳐를 등록
     }
     
@@ -33,6 +45,20 @@ class ViewController: UIViewController {
 //        }
         imgPinch.transform = imgPinch.transform.scaledBy(x: pinch.scale, y: pinch.scale)
         pinch.scale = 1
+    }
+    
+    @objc func doSwipeRight(_ swipe: UISwipeGestureRecognizer){
+        if imgIndex < imgs.count - 1 {
+            imgIndex = imgIndex + 1
+        }
+        imgPinch.image = UIImage(named: imgs[imgIndex])
+    }
+    
+    @objc func doSwipeLeft(_ swipe: UISwipeGestureRecognizer){
+        if imgIndex > 0{
+            imgIndex = imgIndex - 1
+        }
+        imgPinch.image = UIImage(named: imgs[imgIndex])
     }
 }
 

@@ -14,6 +14,11 @@
 		7F76EA8F28AE038400B4EEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F76EA8E28AE038400B4EEDB /* Assets.xcassets */; };
 		7F76EA9228AE038400B4EEDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F76EA9028AE038400B4EEDB /* LaunchScreen.storyboard */; };
 		7F76EA9A28AE0C7100B4EEDB /* peing11.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F76EA9928AE0C7100B4EEDB /* peing11.png */; };
+		7F76EA9C28AE0D5200B4EEDB /* peingu1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F76EA9B28AE0D5200B4EEDB /* peingu1.jpeg */; };
+		7F76EAA128AE0D6600B4EEDB /* peingu4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F76EA9D28AE0D6600B4EEDB /* peingu4.jpeg */; };
+		7F76EAA228AE0D6600B4EEDB /* peing6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F76EA9E28AE0D6600B4EEDB /* peing6.jpeg */; };
+		7F76EAA328AE0D6600B4EEDB /* peing2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F76EA9F28AE0D6600B4EEDB /* peing2.jpeg */; };
+		7F76EAA428AE0D6600B4EEDB /* peing5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F76EAA028AE0D6600B4EEDB /* peing5.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		7F76EA9128AE038400B4EEDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F76EA9328AE038400B4EEDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F76EA9928AE0C7100B4EEDB /* peing11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peing11.png; sourceTree = "<group>"; };
+		7F76EA9B28AE0D5200B4EEDB /* peingu1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peingu1.jpeg; sourceTree = "<group>"; };
+		7F76EA9D28AE0D6600B4EEDB /* peingu4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peingu4.jpeg; sourceTree = "<group>"; };
+		7F76EA9E28AE0D6600B4EEDB /* peing6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peing6.jpeg; sourceTree = "<group>"; };
+		7F76EA9F28AE0D6600B4EEDB /* peing2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peing2.jpeg; sourceTree = "<group>"; };
+		7F76EAA028AE0D6600B4EEDB /* peing5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peing5.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				7F76EA9928AE0C7100B4EEDB /* peing11.png */,
+				7F76EA9B28AE0D5200B4EEDB /* peingu1.jpeg */,
+				7F76EA9F28AE0D6600B4EEDB /* peing2.jpeg */,
+				7F76EAA028AE0D6600B4EEDB /* peing5.jpeg */,
+				7F76EA9E28AE0D6600B4EEDB /* peing6.jpeg */,
+				7F76EA9D28AE0D6600B4EEDB /* peingu4.jpeg */,
 				7F76EA8528AE038100B4EEDB /* AppDelegate.swift */,
 				7F76EA8728AE038100B4EEDB /* SceneDelegate.swift */,
 				7F76EA8928AE038100B4EEDB /* ViewController.swift */,
@@ -129,8 +144,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F76EA9228AE038400B4EEDB /* LaunchScreen.storyboard in Resources */,
+				7F76EAA228AE0D6600B4EEDB /* peing6.jpeg in Resources */,
 				7F76EA8F28AE038400B4EEDB /* Assets.xcassets in Resources */,
+				7F76EA9C28AE0D5200B4EEDB /* peingu1.jpeg in Resources */,
+				7F76EAA428AE0D6600B4EEDB /* peing5.jpeg in Resources */,
+				7F76EAA328AE0D6600B4EEDB /* peing2.jpeg in Resources */,
 				7F76EA8D28AE038100B4EEDB /* Main.storyboard in Resources */,
+				7F76EAA128AE0D6600B4EEDB /* peingu4.jpeg in Resources */,
 				7F76EA9A28AE0C7100B4EEDB /* peing11.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
