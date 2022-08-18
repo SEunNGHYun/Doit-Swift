@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  18_swipe
-//
-//  Created by 윤승현 on 2022/08/16.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -45,6 +38,7 @@ class ViewController: UIViewController {
         imgViewDown.image = imgDown[0]
         imgViewRight.image = imgRight[0]
         imgViewLeft.image = imgLeft[0]
+        //처음 화면에 보여질 이미지를 뽑아와 화면에 보여줌
         
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGesture(_:)))
         swipeUp.direction = UISwipeGestureRecognizer.Direction.up
@@ -62,7 +56,9 @@ class ViewController: UIViewController {
         swipeLeft.direction = UISwipeGestureRecognizer.Direction.left
         self.view.addGestureRecognizer(swipeLeft)
         
-        //
+        let dd = UISwipeGestureRecognizer(target: <#T##Any?#>, action: <#T##Selector?#>)
+        //화면에서 인식할 수 있는 제스쳐를 추가 합니다.(한손가락으로 위, 아래, 오른쪽, 왼쪽 스와이프)
+        //스와이프 이벤트 발생시 선언해 놓은 respondToSwipeGesture 함수가 실행이 되도록 선언
         
         let swipeUpMulti = UISwipeGestureRecognizer(target: self, action: #selector(ViewController.respondToSwipeGestureMulti(_:)))
         swipeUpMulti.direction = UISwipeGestureRecognizer.Direction.up
@@ -84,7 +80,10 @@ class ViewController: UIViewController {
         swipeLeftMulti.numberOfTouchesRequired = numOfTouchs
         self.view.addGestureRecognizer(swipeLeftMulti)
         
+        //화면 에서 인식할 수 있는 제스쳐를 추가 합니다.(두 손가락으로 위, 아래, 오른쪽, 왼쪽 스와이프)
+        //스와이프 이벤트 발생시 선언해 놓은 respondToSwipeGestureMulti 함수가 실행이 되도록 선언
     }
+    
     
     @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer){
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
@@ -94,17 +93,18 @@ class ViewController: UIViewController {
             imgViewRight.image = imgRight[0]
 
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizer.Direction.up :
-                imgViewUp.image = imgUp[1]
-            case UISwipeGestureRecognizer.Direction.down :
-                imgViewDown.image = imgDown[1]
-            case UISwipeGestureRecognizer.Direction.right :
-                imgViewRight.image = imgRight[1]
-            case UISwipeGestureRecognizer.Direction.left :
-                imgViewLeft.image = imgLeft[1]
-            default :
-                break
+                case UISwipeGestureRecognizer.Direction.up :
+                    imgViewUp.image = imgUp[1]
+                case UISwipeGestureRecognizer.Direction.down :
+                    imgViewDown.image = imgDown[1]
+                case UISwipeGestureRecognizer.Direction.right :
+                    imgViewRight.image = imgRight[1]
+                case UISwipeGestureRecognizer.Direction.left :
+                    imgViewLeft.image = imgLeft[1]
+                default :
+                    break
             }}
+        //제스쳐 이벤트 발생시 제스쳐 방향에 맞는 화살표이미지로 변경
     }
     
     @objc func respondToSwipeGestureMulti(_ gesture: UIGestureRecognizer){
@@ -126,6 +126,7 @@ class ViewController: UIViewController {
             default :
                 break
             }}
+        //제스쳐 이벤트 발생시 제스쳐 방향에 맞는 화살표이미지로 변경
     }
 }
 
